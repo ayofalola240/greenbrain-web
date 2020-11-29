@@ -168,6 +168,89 @@ main {
     background-image: linear-gradient(45deg,transparent 20%,#ccc 25%,transparent 0),linear-gradient(-45deg,transparent 20%,#ccc 25%,transparent 0),linear-gradient(-45deg,transparent 75%,#ccc 80%,transparent 0),radial-gradient(#efe 2px,transparent 0);
     background-size: 18px 18px,18px 18px;
 }
+.lecturenotes>a h1{
+    color: #fe7e8a;
+}
+.lecturetopics>a h1 {
+    color: #ebc97a;
+}
+.pastquestions>a h1{
+    color: #4e6532;
+}
+.projects>a h1{
+    color: #219988;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.stats h1 {
+    font-size: 3.7rem;
+    font-weight: 600;
+}
+.stats a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+.stats>div{
+    text-align: center;
+    padding: 8%;
+}
+
+/* Upload Now Section */
+.upload-now {
+    position: relative;
+    width: 100%;
+    padding: 6% 8%;
+    background-color: #e4f9f5;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: .5rem;
+}
+.upload-now>div {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upload-now>div a {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    font-size: .9rem;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #219988;
+    font-weight: 600;
+    border: none;
+}
+.upload-now>div img{
+    width: 45%;
+}
+/*Quick Links Section  */
+.quick-links{
+    position: relative;
+    width: 100%;
+    padding: 3% 4% 1% 4%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .5rem;
+}
+.quick-links>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quick-links a{
+    color: #fff;
+    text-decoration: none;
+}
+.quick-links ul{
+    list-style-type: none;
+}
 nav,footer, section {
     display: block;
 }
