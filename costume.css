@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --faint-font: #3f3356;
+    --faint-font: #3f3356;
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+#nav-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 2000;
+    background:#fff;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    height: calc(10vh - 3px);
+    padding: 2.5rem;
+}
+.navbar-brand {
+    font-size: 1.25rem;
+    color: rgba(0,0,0,.9);
+}
+
+/* Section Intro */
+.intro {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+    background-image: linear-gradient(45deg,transparent 20%,#ccc 25%,transparent 0),linear-gradient(-45deg,transparent 20%,#ccc 25%,transparent 0),linear-gradient(-45deg,transparent 75%,#ccc 80%,transparent 0),radial-gradient(#efe 2px,transparent 0);
+    background-size: 18px 18px,18px 18px;
+    height: 90vh;
+}
+.intro>div {
+    position: relative;
+    width: 50%;
+}
+.list-items {
+    padding: 0 6%;
+}
+.list-items .heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 150%;
+    margin-bottom: 7%;
+}
+
+.list-items li {
+    margin: 2rem 0;
+}
+.list-items li:before {
+    content: "\2713";
+    color: red;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: 600;
+    padding: 0 -20px;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+.intro a {
+    display: inline-block;
+    padding: 3% 6%;
+    background-color: #219988;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 2%;
+}
+#first{
+    order: 1;
+}
+#second{
+    order: 2;
+}
+
+.list-items ul {
+    list-style: none;
+    color: var(--faint-font);
+    font-size: 1.3rem;
+}
+main {
+    width: 100%;
+    background-color: #fff;
+    color: #1a051d;
+}
+
+/* Section Productive */
+.productive {
+    position: relative;
+    width: 100%;
+    padding: 5%;
+    background-color: #e4f9f5;
+}
+.productive>h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    background-color: #e4f9f5;
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0;
+}
+.productive .productive-items {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+.productive-items>div {
+    background: #fff;
+    height: 300px;
+    margin: 5%;
+    border-radius: 5px;
+    padding: 3% 7%;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+}
+.productive-items>div img {
+    display: inline-block;
+    width: 20%;
+}
+.productive-items>div h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 3% 0;
+}
+.productive-items>div div{
+    color: var(--faint-font);
+}
+
+/* Section Stats */
+.stats{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1% 5%;
+    background-color: #fff;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    background-image: linear-gradient(45deg,transparent 20%,#ccc 25%,transparent 0),linear-gradient(-45deg,transparent 20%,#ccc 25%,transparent 0),linear-gradient(-45deg,transparent 75%,#ccc 80%,transparent 0),radial-gradient(#efe 2px,transparent 0);
+    background-size: 18px 18px,18px 18px;
+}
+nav,footer, section {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(24deg,#40514e,#40514e 50%,#219988);
+}
